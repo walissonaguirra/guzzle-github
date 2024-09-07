@@ -35,7 +35,9 @@ $client = new Client([
 try {
 	
 	$data = [
-		'description' => 'Integração com API Github usando Guzzle'
+		'json' => [
+			'description' => 'Integração com API Github usando Guzzle'
+		]
 	];
 
 	$response = $client->patch('repos/walissonaguirra/guzzle-github', $data);
